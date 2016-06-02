@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>对话框</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<!-- data调用插件，作用在哪个目标对象上 -->
+	<button class="btn btn-default" data-toggle='modal' data-target='#dialog' id="btn">弹出对话框</button>
+	<div class="modal fade" id="dialog">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					提示
+		 		</div>
+				<div class="modal-body">
+					这就是一个模态提示框!!!
+				</div>
+				<div class="modal-footer">
+				<!-- 点击确定消失 -->
+					<button type="button" class="btn btn-primary" data-dismiss='modal'>
+						确定
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		// $(function(){
+		// 	$('#btn').click(function(){
+		// 		$('#dialog').modal();
+		// 	});
+		// });
+	</script>
+</body>
+</html>

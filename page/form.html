@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body style="padding: 30px">
+<!-- 加了一个响应式，大屏内一行排列 -->
+	<form class="form-inline">
+	<!-- 将label与input指定为一组，加了一个margin-bottom -->
+		<div class="form-group">
+			<label>用户名：</label>
+			<input type="text" class="form-control" placeholder="请输入用户名">
+		</div>
+		<div class="form-group">
+			<!-- 隐藏lable标签 -->
+			<label class="sr-only">密码：</label>
+			<input type="password" class="form-control" placeholder="请输入密码">
+		</div>
+		<!-- 组合表单 -->
+		<div class="form-group">
+				<label class="sr-only">讲解</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+					<input type="text" class="form-control">
+				</div>
+		</div>
+	</form>
+
+	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>
